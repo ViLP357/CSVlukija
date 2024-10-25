@@ -1,0 +1,4 @@
+def OpenFile(filename : str):
+    print("toimii")
+
+OpenFile("Ajankäyttö")
