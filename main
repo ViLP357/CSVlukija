@@ -1,4 +1,9 @@
 def OpenFile(filename : str):
     print("toimii")
+    with open(filename, "r") as file:
+        data = file.read()
+    data = data.split(",")
+    for i in data:
+        print(i)
 
-OpenFile("Ajankäyttö")
+OpenFile("Ajankäyttö.csv")
