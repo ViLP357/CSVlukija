@@ -1,8 +1,26 @@
+def kaavio(arvot : list):
+    print(arvot)
+    rivit = []
+    for i in range(5, 0, -1):
+        rivi = []
+        for a in arvot:
+            if int(a) >= i:
+                rivi += "x"
+            else:
+                rivi += "  "
+        rivit.append(rivi)
+    
+    #print(rivit)
+    for rivi in rivit:
+        print(rivi)
+
+
 def OpenFile(filename : str):
     edellinen = ""
     aika = 0
     blenderit = 0
     unityt = 0
+    motivationTracker = []
     print("toimii")
 
     with open(filename, "r") as file:
@@ -17,11 +35,20 @@ def OpenFile(filename : str):
                 unityt += 1
             elif i.lower() == "blender":
                 blenderit += 1
+            elif len(i) == 1:
+                try:
+                    if type(int(i)) == int:
+                        motivationTracker.append(i)
             
+                except ValueError:
+                    continue
+               
         edellinen = i
     print(f"kulutettu aika: {aika}")
     print(f"Unityä käytetty {unityt}")
     print(f"Blenderiä käytetty {blenderit}")
+    kaavio(motivationTracker)
+    #print(motivationTracker)
 
 OpenFile("Ajankäyttö.csv")
 print("kaikki tulostettu")

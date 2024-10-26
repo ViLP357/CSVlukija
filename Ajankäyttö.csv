@@ -14,4 +14,5 @@ Päiväys:,Mitä tein(vapaa kuvaus),Käytetyt ohjelmat/välineet,Ajatuksia/huomi
 18.10.,Lisäsin portit ja maalin sekä voittoruudun ja siihen voittoajan.,Unity,Muista lisätä se skripti jollekkin objektille!!!!!!!!!!!!!!!!!!!!!,Levelivalikko alkusceneen ja ennätysajat niihin,Eroja eri tavoista kutsua funktiota toisesta skriptistä (instanssi ja get component),2h,5,ChatGpt lisäsi vastaukseeensa emojeita kun ihmettelin miksi funktion kutsuminen epäonnistui.,,,,,,
 19.10.,Tein levelvalikon testiversion ja scriptin joka pitää kirjaa nykyisestä levelistä. Pohdin liikaa toteutanko levelit yhtenä vai monena scenenä,Unity,Riviä koodia = 375; Päätin että toteutan levelit yhteen tasoon. Se on toivottavasti loppujen lopuksi hyvä ratkaisu,"Jokaisen levelin yksilöllinen scripti(auton alkusijainti ja porttien maara), parhaan ajan tallennus levelistä",Eri scenejen välillä tiedon siirto on vaikeampaa,2.5h,4,,,,,,,
 22.10.,Tein level 2 ja level 1 portit prefabeiksi ja lähtöpaikan eriksi. Tein ennätysaikaa levelvalikkoon,Unity,Tee level 1 valmiiksi ja sitten ctrlD muut tasot,Korjaa level 2 ennätysaika tai mallinna auto,PlayerPrefs tallennuksen,2.5h,5,,,,,,,
-23.10.,,Blender,,,,,,,,,,,,
+23.10.,Aloitin the auton 3D mallin,Blender,,,,2h,5,En tykkää blenderistä. Ihan hirveä käyttöliittymä,,,,,,
+,,,,,,,, ,,,,,,
