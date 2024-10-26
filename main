@@ -7,3 +7,4 @@ def OpenFile(filename : str):
         print(i)
 
 OpenFile("Ajankäyttö.csv")
+print("kaikki tulostettu")
