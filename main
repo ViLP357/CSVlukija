@@ -1,10 +1,27 @@
 def OpenFile(filename : str):
+    edellinen = ""
+    aika = 0
+    blenderit = 0
+    unityt = 0
     print("toimii")
+
     with open(filename, "r") as file:
         data = file.read()
     data = data.split(",")
     for i in data:
-        print(i)
+        if i != edellinen:
+            print(i)
+            if len(i) > 0 and i[-1] == "h":
+                aika += float(i[:1])
+            if i.lower() == "unity":
+                unityt += 1
+            elif i.lower() == "blender":
+                blenderit += 1
+            
+        edellinen = i
+    print(f"kulutettu aika: {aika}")
+    print(f"Unityä käytetty {unityt}")
+    print(f"Blenderiä käytetty {blenderit}")
 
 OpenFile("Ajankäyttö.csv")
 print("kaikki tulostettu")
